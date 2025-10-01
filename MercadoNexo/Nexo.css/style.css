@@ -1,0 +1,39 @@
+/* style.css - estilos básicos y responsive personalizados */
+
+/* Reset ligero */
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background: #fff;
+}
+
+/* Hero con gradiente */
+.hero {
+  background: linear-gradient(120deg, #0d6efd 0%, #6f42c1 60%);
+  color: #fff;
+}
+
+/* Tarjetas de producto */
+.card-product {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card-product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Contenedor de productos */
+.product-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Footer fix */
+footer { font-size: .9rem; }
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .product-img { height: 160px; }
+}
